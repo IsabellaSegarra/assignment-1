@@ -26,7 +26,7 @@ Explain whether each scenario is a **classification or regression** problem, and
 
 **(c)** We are interested in predicting weekly average ground-level ozone concentration in a coastal city. We collect weekly data for all of 2019. For each week we record average ozone concentration, sea surface temperature, wind speed, solar radiation, and atmospheric
 
-> This model is regression, prediction problem. It is regression because we are interested in average ozone concentration from five variables or predictors. We are modeling with 52 samples and five predictors. 
+> This model is regression, prediction problem. It is regression because we are interested in average ozone concentration from four variables or predictors. We are modeling with 52 samples and four predictors. 
 
 ---
 
@@ -34,7 +34,7 @@ Explain whether each scenario is a **classification or regression** problem, and
 
 What are the advantages and disadvantages of a very flexible (versus a a less flexible) approach for regression? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
 
->  A more flexible model has higher variance because it tries to fit more complex patterns in the data, which can lead to capturing noise rather than the actual relationship you are trying to model. A less flexible model assumes a simpler relationship, leading to higher bias but lower variance. A less flexible model is preferred when the sample size of the data is small or the model is already linear. 
+>  A flexible approach results in lower bias because there are fewer assumptions built into the model. However, this can result in high variance, such as being sensitive to small differences in the training set, which can raise the test MSE, often leading to overfitting. A less flexible approach leads to lower variance, making it stable across different training sets, however there is higher bias because more assumptions are built into the model. A more flexible model might be preferred when you have a complex, non-linear relationship (e.g., degree 3 polynomial) with a large enough dataset. A less flexible model is preferred when you have a linear relationship with limited training data, or when you want to more easily interpret the effect of predictors.
 ---
 
 ### Exercise 3 (ISLP exercise 6)
